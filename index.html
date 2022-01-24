@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Road Curve Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="input-container">
+        <div class="inputs">
+        <div class="input">
+            <p>I :</p>
+            <input id=angleInput  placeholder="in degrees" />
+          </div>
+          <div class="input">
+            <p>R :</p>
+            <input id=radiusInput  placeholder="in meters" />
+          </div>
+          <div class="input">
+            <p>nailing dist :</p>
+            <input id=nailingDist  placeholder="leave 0 or empty if not important" />
+          </div>
+      </div>
+      <button type="submit" id=calculateBtn>
+          calculate
+      </button>
+    </div>
+    <div id=answers class="answers">
+    
+    </div>
+    <div id=tableCont class="answers">
+    
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
