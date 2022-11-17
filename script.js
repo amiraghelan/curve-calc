@@ -83,7 +83,7 @@ caculateBtn.addEventListener("click", () => {
     for (let i = 1; i <= kg; i++) {
       localAngles.push(deltaInDeg.toFixed(3))
       globalAngles.push((i * deltaInDeg).toFixed(3))
-      lcs.push((2 * R * Math.sin(2 * i * deltaInRad)).toFixed(3))
+      lcs.push((2 * R * Math.sin(i * deltaInRad)).toFixed(3))
     }
     const rem = answers.L - kg * nailingDist
     localAngles.push(((((0.5 * rem) / R) * 180) / Math.PI).toFixed(3))
