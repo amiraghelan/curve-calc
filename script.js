@@ -11,7 +11,7 @@ function computeAnswers(I, R, answers) {
   answers.Lc = (2 * R * Math.sin(I / 2)).toFixed(3)
   answers.E = (answers.T * Math.tan(I / 4)).toFixed(3)
   answers.M = (R * (1 - Math.cos(I / 2))).toFixed(3)
-  answers.D = (572.96 / R).toFixed(3)
+  answers.D = (572.96 / R).toFixed(1)
 }
 
 function showAnswers(answers) {
